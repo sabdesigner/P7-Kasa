@@ -1,3 +1,31 @@
-footer {
-    color:green
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 209px ;
+    justify-content: center;
+    position:relative;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+}
+
+.logoFooter{
+    align-self: center;
+    text-align: center;
+    color:white;
+  }
+// 
+@media screen and (max-width:426px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 209px ;
+        justify-content: center;
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        color: white;
     }
+}

@@ -1,0 +1,14 @@
+// logo du header
+.logo{
+  position: absolute;
+  left: 100px;
+  top: 40px;
+}
+
+@media screen and (max-width:426px){
+  .logo{
+    position: absolute;
+    width: 145px;
+    height: 47px;
+  }
+}

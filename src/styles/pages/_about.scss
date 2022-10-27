@@ -1,3 +1,21 @@
-h2 {
-    color: orangered
-  }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  background-color: $main-background;
+  font-family: $font;
+  color: $main-color;
+  height: 100%;
+
+}
+
+.about{
+  height: auto;
+}
