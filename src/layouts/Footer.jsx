@@ -6,7 +6,7 @@ class Footer extends Component {
         return(
             <div className="footer">
                 <div className ="logoFooter">
-                    <img src={logoK} alt="logo de kasa" />
+                    <img src={logoK} alt="logo de kasa" height="28px"/>
                     <p>© 2020 Kasa. All rights reserved</p>
                 </div>
             </div>

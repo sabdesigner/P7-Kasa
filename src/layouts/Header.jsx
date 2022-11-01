@@ -6,20 +6,20 @@ import logo from '../assets/images/logo_kasa_pink.png';
 class Header extends Component {
     render(){
         return(
-            <div>
+            <header>
                 <div className="logo">
-                    <Link to={`/`}> <img src={logo} alt="logo de kasa"/></Link>
+                    <Link to={`/`}> <img src={logo} alt="logo de kasa" height="48px"/></Link>
                 </div>
        
                 <div className="navigation">
-                    <NavLink exact to ="/" activeClassName ="nav-active">
+                    <NavLink end to ="/" >
                             Accueil
                     </NavLink>
-                    <NavLink exact to ="/about" activeClassName ="nav-active">
+                    <NavLink end to ="/about" >
                             A propos
                     </NavLink>
                 </div>
-            </div>
+            </header>
         )
     }
 }

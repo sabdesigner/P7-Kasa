@@ -1,0 +1,43 @@
+.banner {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3; 
+
+    border-radius: 2.5vw;
+
+  }
+
+  h2 {
+    position: absolute;
+    z-index: 1;
+    font-size: $large-font-size;
+    font-weight: 500;
+    justify-content: center;
+
+    color: white;
+      
+
+}
+  img {
+    min-width: 100%;
+    min-height: 10vh;
+    background-position: bottom center;
+
+    border-radius: 2.5vw;
+
+  }
+}

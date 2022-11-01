@@ -8,10 +8,14 @@ import {
 //Import Sass
 import "./styles/main.scss";
 
+import Header from "./layouts/Header";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NoMatch from "./pages/NoMatch";
 import Single from "./pages/Single";
+
+import Footer from "./layouts/Footer";
 
 //Import Header + Footer
 
@@ -20,7 +24,7 @@ function App() {
     <div>
       <div className="App">
         <Router>
-        
+        <Header />
           <Routes>
 
             <Route index element={<Home />} />
@@ -29,7 +33,7 @@ function App() {
             <Route path="*" element={<NoMatch />} />
 
           </Routes>
-
+          <Footer />
         </Router>
       </div>
     </div>

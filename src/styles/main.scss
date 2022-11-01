@@ -1,5 +1,9 @@
 @import 
 "./base/setting";
+@import 
+"./base/font";
+@import 
+"./base/general";
 
 @import
 "./pages/home";
@@ -13,7 +17,16 @@
 @import
 "./layout/footer";
 @import
-"./layout/nav";
+"./layout/header";
 
 @import
-"./layout/logo";
+"./components/banner";
+@import
+"./components/cards";
+
+@import
+"./utils/breakpoints";
+@import
+"./utils/mixins";
+@import
+"./utils/variables";

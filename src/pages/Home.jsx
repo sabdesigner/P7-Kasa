@@ -1,12 +1,18 @@
-import Logo from '../layouts/Logo';
-import Nav from '../layouts/Nav';
-import Footer from '../layouts/Footer';
+import Banner from '../components/Banner'
+import bannerHome from '../assets/images/banner_home_kasa.jpg'
+
+import Cards from '../components/Cards';
+
+
 const Home = () => {
   return(
     <div className="home">
-        <Logo />
-        <Nav />
-        <Footer />
+
+        <Banner 
+               img={bannerHome}
+               title='Chez vous, partout et ailleurs'
+               /> 
+        <Cards />
     </div>
 )
 };

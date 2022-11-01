@@ -1,0 +1,38 @@
+// logo du header
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5%;
+
+.logo{
+  width: 40%;
+  flex: 40%;
+}
+
+}
+// navigation du header
+.navigation{
+  flex: 60%;
+  text-align: right;
+  justify-content: right;
+a{
+  margin-left: 8%;
+
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+
+  color: $main-color;
+  font-variant-caps: all-small-caps;
+  white-space: nowrap;
+  font-size: $medium-font-size;
+  font-weight: 500;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+}

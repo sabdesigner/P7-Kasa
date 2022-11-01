@@ -1,37 +1,8 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html{
-  height: 100%;
-}
-
-body{
-  background-color: $main-background;
-  font-family: $font;
-  color: $main-color;
-  height: 100%;
-
-}
-
 .home{
-  height: auto;
-}
+ 
+  padding: 0 5%;
+  background-color: $main-background;
+  color: $main-color;
 
-li{
-  list-style-type: none;
-}
 
-a{
-  text-decoration: none;
-  cursor: pointer;
-  $main-color:#FF6060;
-
-}
-
-p{
-  text-decoration: none;
-  $main-color:#FF6060;
 }
