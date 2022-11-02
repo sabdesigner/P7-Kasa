@@ -5,11 +5,36 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
+
+    .about-description {
+      width: 582px;
+      padding: 0;
+      margin: 0;
+      color: $main-color;
+      border-radius: 0px 0px 5px 5px;
+      background: $background-grey;
+      padding-top: 10px;
+      position: relative;
+      bottom: 5px;
+      z-index: 1;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    
+      width: 1023px;
+    }
+    .active {
+      padding: 20px 0;
+      max-height: 100vh;
+    }
     p {
       margin: 0 25px;
       font-size: $medium-font-size;
       transition: opacity 0.2s;
     }
+    p.active {
+      opacity: 1;
+    }  
   }
   .collapse {
     background: #FF6060;
@@ -38,3 +63,8 @@
     width: 1023px;
     height: 47px;
   }
+.title {
+  font-size: $medium-font-size;
+  margin-top: 0;
+  font-weight: 500;
+}
