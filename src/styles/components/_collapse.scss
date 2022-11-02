@@ -1,0 +1,40 @@
+.collapse-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+    p {
+      margin: 0 25px;
+      font-size: $medium-font-size;
+      transition: opacity 0.2s;
+    }
+  }
+  .collapse {
+    background: #FF6060;
+    border-radius: 5px;
+    display: flex;
+    font-size: 24px;
+    color: white;
+    z-index: 2;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 0 0;
+    }
+    img {
+      margin: 0px 15px;
+      transition: 0.3s;
+    }
+    img.active {
+      margin: 0px 15px;
+      transform: rotate(180deg);
+    }
+  }
+  .collapse-about {
+    width: 1023px;
+    height: 47px;
+  }
