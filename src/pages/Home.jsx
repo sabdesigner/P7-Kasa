@@ -4,7 +4,7 @@ import bannerHome from '../assets/images/banner_home_kasa.jpg'
 import Cards from '../components/Cards';
 
 
-const Home = () => {
+function Home() {
   return(
     <div className="home">
 

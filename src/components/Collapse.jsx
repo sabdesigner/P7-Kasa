@@ -28,7 +28,7 @@ const Collapse = ({ title, description, cards, index, page }) => {
                 </div>
 
                 <div className={`${page}-description ${active === index ? "active" : ""}`}>
-                    <p className={active === index ? "active" : ""}>
+                    <p>
                         {description}</p>
                     {cards &&
                         cards.map((card, index) => (

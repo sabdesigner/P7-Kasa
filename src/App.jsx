@@ -5,6 +5,9 @@ import {
   Routes
 } from "react-router-dom";
 
+//Import normalize
+import 'normalize.css';
+
 //Import Sass
 import "./styles/main.scss";
 
@@ -29,7 +32,7 @@ function App() {
 
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="single" element={<Single />} />
+            <Route path="logements" element={<Single />} />
             <Route path="*" element={<NoMatch />} />
 
           </Routes>
