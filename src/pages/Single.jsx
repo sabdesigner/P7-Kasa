@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from "react-router-dom";
 
 import Rating from "../components/Rating";
-import Server from "../components/Server";
+import Profile from "../components/Profile";
 import Slider from "../components/Slider";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
@@ -29,14 +29,16 @@ const Single = () => {
            </div>
            <div className="single__rating-and-host">
            <Rating rating={rating}/> 
-          <Server host={host} />
+          <Profile host={host} />
            </div>
          </div>
 
-         <section id="details">
+         <section id="single">
      
-         <div >
-           <Collapse title="Description" content={description} />
+         <div className="collapse" >
+           <Collapse title="Description" content={description}  />
+           </div>
+           <div className="collapse" >
            <Collapse title="Équipement" content={equipments}  />
          </div>
          </section>

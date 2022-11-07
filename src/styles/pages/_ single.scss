@@ -2,6 +2,7 @@
     margin: 0 5%;
     color: $main-color;
     font-size: $medium-font-size;
+
     
     &__content {
         margin-top: 20px;
@@ -33,32 +34,23 @@
         margin-top: 5px;
         margin-bottom: 20px;
         display: flex;
-        justify-content: space-between;
+
         flex-direction: column-reverse;
         justify-content: space-around;
-      margin: 0;
+
       }
-    } 
-    #details {
-      margin: 20px auto;
-      display: flex;  
-      margin: 0;
-   
+ 
+    
+#single {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-bottom: 30px;
 
-      div{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        column-gap: 80px;
-      
-
-        }
-        .collapse {
-          width: 523px;
-          height: 47px;
-          margin: 0;   
-
-          }
-  
-        }
-   
+ .collapse{
+  justify-content:center;
+  width: 582px;
+}
+  }
+  }

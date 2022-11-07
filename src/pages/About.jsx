@@ -29,11 +29,14 @@ function About() {
                img={bannerAbout}
                title=''
                /> 
-               {about.map((about, index) => (
-                <Collapse key={`${about}-${index}`} title={about.title} description={about.description} index={index} page="about" />
+               <section id="about">
+        {about.map((about, index) => (
+         <Collapse key={`${about}-${index}`} title={about.title} content={about.description} page="about" />
             ))}
-        </div>
-    );
+
+            </section>
+      </div>
+  );
 }
 
 export default About;

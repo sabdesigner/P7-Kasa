@@ -1,48 +1,48 @@
-import React, { useState } from 'react';
-import CollapseElement from '../assets/images/collapse_element.png'
+import React from "react";
+// possible d'ajuster l'ouverture du collapse avec usestate
+//Style
+import arrow from "../assets/images/arrowOff.svg";
 
-// UseState permet de declarer la "variable etat " active useState est un Hook qui vous permet d'ajouter l'état React 
-//aux composants de la fonction. Cela nous permet de conserver l'état local dans un composant de fonction.
-const Collapse = ({ title, description, cards, index, page }) => {
-    const [active, setActive] = useState(0);
-// bouton bascule pour afficher et masquer les données à l'aide du crochet useState avec handleToggle
-// nous déclarons une nouvelle variable d'état en appelant le useStateHook, envoie une paire de valeurs -1 argument useState nous renvoie la maj c-a-d setactive
-    const Bascule = index => {
-        if (index === active) {
-            setActive(-1)
-            return
-        }
-        setActive(index)
+const Collapse = ({ title, content }) => {
+  const isCollapse = (e) => {
+    e.preventDefault();
+    const divText = e.target.nextSibling;
+    const arrow = e.target.lastChild;
+
+    if (!divText.classList.contains("show")) {
+      divText.classList.add("show");
+      arrow.classList.add("rotate");
+    } else {
+      divText.classList.remove("show");
+      arrow.classList.remove("rotate");
     }
-// déstructuration du tableau qui permet d'attribuer un nom à chaque élément du tableau.                
+  };
+  return (
+    <div className="collapse ">
+      <button type="button" className="collapse__button" onClick={isCollapse}>
+        {title}
 
-    return (
-        <section>
-            <article className='collapse-container'>
-                <div className={`collapse collapse-${page}`} >
-                    <div onClick={() => Bascule(index)}>
-                        
-                        <p className='titre'>{title}</p>
-                        <img src={CollapseElement} alt="Element flèche" className={active === index ? "active" : ""} />
-                    </div>
-                </div>
-
-                <div className={`${page}-description ${active === index ? "active" : ""}`}>
-                    <p>
-                        {description}</p>
-                    {cards &&
-                        cards.map((card, index) => (
-                            <p key={`${card}-${index}`} 
-                            className="cards">{card}</p>
-                    
-                        ))
-                    }
-                    
-                </div>
-                
-            </article>
-        </section >
-    );
+        <p className="collapse__arrow">
+        <div className="open" onClick={arrow}>
+            <img src={arrow} alt=""  />
+          </div>
+        </p>
+      </button>
+      <div className="collapse__content">
+        {Array.isArray(content) ? (
+          <ul className="collapse__list">
+            {content.map((equipment, index) => (
+              <li key={index} className="collapse__list-element">
+                {equipment}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="collapse__text">{content}</p>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Collapse;
