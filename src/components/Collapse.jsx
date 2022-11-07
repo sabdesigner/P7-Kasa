@@ -34,8 +34,10 @@ const Collapse = ({ title, description, cards, index, page }) => {
                         cards.map((card, index) => (
                             <p key={`${card}-${index}`} 
                             className="cards">{card}</p>
+                    
                         ))
                     }
+                    
                 </div>
                 
             </article>

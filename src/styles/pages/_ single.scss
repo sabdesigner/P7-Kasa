@@ -1,5 +1,64 @@
-.single{
-  padding: 0 5%;
-  background-color: $main-background;
-  color: $main-color;
-}
+  .single {
+    margin: 0 5%;
+    color: $main-color;
+    font-size: $medium-font-size;
+    
+    &__content {
+        margin-top: 20px;
+        font-size: $medium-font-size;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      &__title {
+        margin: 0;
+        font-size: $large-font-size;
+        font-weight: 500;
+  
+      }
+      &__location {
+        margin: 18px 0;
+        font-size: $small-font-size;
+        font-weight: 500;
+
+      }
+      &__tags {
+        margin: 18px 0;
+        display: flex;
+        flex-wrap: wrap;
+     
+      }
+      &__rating-and-host {
+        font-size: $medium-font-size;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      margin: 0;
+      }
+    } 
+    #details {
+      margin: 20px auto;
+      display: flex;  
+      margin: 0;
+   
+
+      div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 80px;
+      
+
+        }
+        .collapse {
+          width: 523px;
+          height: 47px;
+          margin: 0;   
+
+          }
+  
+        }
+   

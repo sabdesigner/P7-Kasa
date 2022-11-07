@@ -1,4 +1,3 @@
-
 import Banner from '../components/Banner'
 import bannerAbout from '../assets/images/banner_about_kasa.jpg'
 

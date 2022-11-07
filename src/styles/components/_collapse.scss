@@ -1,12 +1,14 @@
-.collapse-container {
+.collapse-container  {
+  margin-bottom: 8px;
+
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px;
 
-    .about-description {
+
+    .about-description  {
       width: 582px;
       padding: 0;
       margin: 0;
@@ -68,3 +70,4 @@
   margin-top: 0;
   font-weight: 500;
 }
+

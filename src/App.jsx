@@ -32,8 +32,13 @@ function App() {
 
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="logements" element={<Single />} />
+            <Route
+                        exact
+                        path="/logements/:cardId"
+                          element={<Single />} />
+
             <Route path="*" element={<NoMatch />} />
+          
 
           </Routes>
           <Footer />
