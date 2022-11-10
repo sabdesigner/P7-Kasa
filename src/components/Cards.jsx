@@ -22,14 +22,14 @@ class Cards extends React.Component {
      render(){
          this.randomize(datas)
          return (
-              <article className="cards">
+              <div className="cards">
                    {cardsArray.map((card) => (
                         <Link to={'/logements/' + card.id} key={ card.id }>
                              <img src={ card.cover } alt={ card.title } />
                              <p>{ card.title}</p>
                         </Link>
                    ))}
-              </article>
+                   </div>
          )
     }
 }

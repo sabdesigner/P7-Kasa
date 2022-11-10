@@ -1,13 +1,13 @@
 .collapse {
   color: white;
   margin-bottom: 20px;
-  margin-top: 20px;
 
   @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
       $delay: 120ms * $i;
       animation: show-up 600ms $delay both;
       transform-origin: center;
+      width: 100%;
     }
   }
 
@@ -20,22 +20,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 52px;
-    font-size: 24px;
-    padding-left: 24px;
+    height: 30px;
+    font-size: 13px;
+    padding-left: 13px;
     position: relative;
     z-index: 1;
+    min-width: 335px;
+
+    @include respond-to('tablet') {
+      max-width: 1440px;
+      height: 40px;
+      font-size: 16px;      
+  }  
+    @include respond-to('desktop') {
+      font-size: 24px;
+      height: 52px;
+      padding-left: 24px;
+  }  
   }
 
   &__arrow {
     align-content: center;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    
+  
     pointer-events: none;
     transform: rotate(180deg);
     transition: transform 300ms;
-  
+
+    .img {
+      width: 40%;
+      
+      @include respond-to('tablet') {
+        width: 80%;
+       } 
+      @include respond-to('desktop') {
+        width: 100%;
+     }  
+    }
+
+    @include respond-to('desktop') {
+     height: 24px;
+     margin-top: 1rem;
+     margin-right: 1rem;
+  }  
+
   }
 
   &__content {
@@ -47,7 +74,15 @@
     max-height: 0;
     transition: max-height 250ms ease-out, padding 300ms ease-out;
     overflow: hidden;
-    padding-left: 24px;
+    padding-left: 13px;
+
+    @include respond-to('tablet') {
+      max-width: 1440px;
+  }  
+    @include respond-to('desktop') {
+      padding-left: 24px;
+  }  
+
   }
   &__text {
     margin: 0;
@@ -63,6 +98,7 @@
   }
   &__list-element {
     margin-bottom: 3px;
+
   }
 }
 .rotate {
@@ -70,8 +106,12 @@
 }
 .show {
   max-height: 500px;
-  padding: 24px 24px 12px 24px;
+  padding: 13px 13px 12px 13px;
   transition: max-height 250ms ease-in-out, padding 300ms ease-in-out;
+
+  @include respond-to('desktop') {
+    padding: 24px 24px 12px 24px;
+}  
 }
 
 @keyframes show-up {

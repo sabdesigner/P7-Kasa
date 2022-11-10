@@ -5,13 +5,13 @@ const Profile = ({ host }) => {
   const [name, lastname] = isHostSplited;
 
   return (
-    <div className="server">
-      <div className="server__name">
-        <p className="server__firstname">{name.trim()}</p>
-        <p className="server__lastname">{lastname.trim()}</p>
+    <div className="profile">
+      <div className="profile__name">
+        <p className="profile__firstname">{name.trim()}</p>
+        <p className="profile__lastname">{lastname.trim()}</p>
       </div>
 
-      <img src={host.picture} alt="" className="server__picture" />
+      <img src={host.picture} alt="" className="profile__picture" />
     </div>
   );
 };

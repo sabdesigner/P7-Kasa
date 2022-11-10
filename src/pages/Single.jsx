@@ -10,6 +10,7 @@ import Collapse from "../components/Collapse";
 import products from '../assets/datas/logements.json'
 
 const Single = () => {
+  
   const { cardId } = useParams();
   const card = products.find((card) => card.id === cardId);
   const { title, location, rating, host, equipments, description, pictures } =

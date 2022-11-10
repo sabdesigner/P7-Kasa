@@ -24,7 +24,7 @@ const Collapse = ({ title, content }) => {
 
         <p className="collapse__arrow">
         <div className="open" onClick={arrow}>
-            <img src={arrow} alt=""  />
+            <img className="img" src={arrow} alt=""  />
           </div>
         </p>
       </button>

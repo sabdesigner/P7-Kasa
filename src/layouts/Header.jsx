@@ -8,7 +8,7 @@ class Header extends Component {
         return(
             <header>
                 <div className="logo">
-                    <Link to={`/`}> <img src={logo} alt="logo de kasa" height="48px"/></Link>
+                    <Link to={`/`}> <img src={logo} alt="logo de kasa" height="47px" width="145px"/></Link>
                 </div>
        
                 <div className="navigation">

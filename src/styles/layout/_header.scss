@@ -1,5 +1,4 @@
 // logo du header
-
 header {
   display: flex;
   align-items: center;
@@ -17,20 +16,32 @@ header {
 .navigation{
   flex: 60%;
   text-align: right;
-  justify-content: right;
+  justify-content: center;
+  
 a{
-  margin-left: 8%;
-
+  column-gap: 5px;
   text-decoration: none;
-  text-align: center;
+  text-align: right;
   vertical-align: middle;
 
   color: $main-color;
-  font-variant-caps: all-small-caps;
   white-space: nowrap;
-  font-size: $medium-font-size;
+
   font-weight: 500;
-    
+
+  font-size: $small-font-size;
+  text-transform: uppercase;
+
+
+    @include respond-to('tablet') {
+        padding-top: 18px;
+    }
+    @include respond-to('desktop') {
+      font-size: $medium-font-size;
+      text-transform: none;
+    }
+
+ 
 }
 a:hover{
     text-decoration: underline;

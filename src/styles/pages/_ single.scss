@@ -3,23 +3,25 @@
     color: $main-color;
     font-size: $medium-font-size;
 
-    
     &__content {
         margin-top: 20px;
         font-size: $medium-font-size;
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    
       }
       &__title {
         margin: 0;
-        font-size: $large-font-size;
+        font-size: 18px;
         font-weight: 500;
   
       }
       &__location {
-        margin: 18px 0;
-        font-size: $small-font-size;
+        margin: 14px 0;
+        font-size: 14px;
         font-weight: 500;
 
       }
@@ -31,26 +33,26 @@
       }
       &__rating-and-host {
         font-size: $medium-font-size;
+        gap : 50px;
+        width: 100%;
         margin-top: 5px;
         margin-bottom: 20px;
         display: flex;
-
-        flex-direction: column-reverse;
-        justify-content: space-around;
-
+        justify-content: space-between;
       }
  
     
 #single {
   width: 100%;
   display: flex;
-  gap: 50px;
   justify-content: space-between;
-  margin-bottom: 30px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 
  .collapse{
   justify-content:center;
-  width: 582px;
+  width: 335px;
 }
-  }
-  }
+}
+}

@@ -2,13 +2,26 @@
   padding: 0 5%;
   background-color: $main-background;
   color: $main-color;
+
+      
   display:flex;
   flex-direction: column;
+  align-content: center;
 
-
+  .banner {
+  height:223px;
+  margin-bottom: 20px;
 
 #about {
-width: 1023px;
-align-self: center;
+
+  justify-content: center;
+  min-width: 335px;
+  @include respond-to('tablet') {
+    max-width: 1200px;
+}  
+  @include respond-to('desktop') {
+    margin: 25%;
+}  
+}
 }
 }

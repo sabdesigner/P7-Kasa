@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import Stars from './Stars';
+import Stars from './Rating';
 
 class AboutLogement extends Component {
     

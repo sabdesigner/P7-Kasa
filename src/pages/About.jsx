@@ -24,7 +24,7 @@ function About() {
      ]
  
      return (
-        <div className="about">
+        <div className="about" >
              <Banner
                img={bannerAbout}
                title=''

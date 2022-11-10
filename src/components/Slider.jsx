@@ -6,6 +6,8 @@ import arrowLeft from "../assets/images/arrowLeft.svg";
 import arrowRight from "../assets/images/arrowRight.svg";
 
 const Slider = ({ slides }) => {
+
+
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
