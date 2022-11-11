@@ -1,22 +1,24 @@
-import {Component} from 'react';
-import { NavLink, Link } from "react-router-dom"
-import logo from '../assets/images/logo_kasa_pink.png';
-
+import { Component } from 'react'
+import { NavLink, Link } from 'react-router-dom'
+import logo from '../assets/images/logo_kasa_pink.png'
 
 class Header extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <header>
                 <div className="logo">
-                    <Link to={`/`}> <img src={logo} alt="logo de kasa" height="47px" width="145px"/></Link>
+                    <Link to={`/`}>
+                        {' '}
+                        <img src={logo} alt="logo de kasa" />
+                    </Link>
                 </div>
-       
+
                 <div className="navigation">
-                    <NavLink end to ="/" >
-                            Accueil
+                    <NavLink end to="/">
+                        Accueil
                     </NavLink>
-                    <NavLink end to ="/about" >
-                            A propos
+                    <NavLink end to="/about">
+                        A propos
                     </NavLink>
                 </div>
             </header>
@@ -24,4 +26,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Header

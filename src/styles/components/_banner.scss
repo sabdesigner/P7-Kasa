@@ -2,17 +2,17 @@
   width: 100%;
   position: relative;
   border-radius: 10px;
-  
+
   display: flex;
   align-items: center;
 
   @include respond-to('tablet') {
     justify-content: center;
-    }
+  }
 
   @include respond-to('desktop') {
     justify-content: center;
-    }
+  }
 
   &:before {
     content: '';
@@ -21,7 +21,7 @@
     height: 100%;
     background: #000000;
     mix-blend-mode: darken;
-    opacity: 0.3; 
+    opacity: 0.3;
 
     border-radius: 2.5vw;
   }
@@ -35,12 +35,12 @@
 
     display: flex;
     justify-content: center;
-    
+
     text-align: left;
     padding-left: 5%;
 
     min-height: 48px;
-    max-width : 217px;
+    max-width: 217px;
 
     font-size: 24px;
     text-transform: none;
@@ -49,14 +49,16 @@
     @include respond-to('tablet') {
 
       max-height: 68px;
-      max-width : 705px;
+      max-width: 705px;
       font-size: 36px;
-      }
+    }
+
     @include respond-to('desktop') {
       font-size: 48px;
-      }
+    }
 
-}
+  }
+
   img {
     object-fit: cover;
     background-position: bottom center;

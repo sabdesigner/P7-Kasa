@@ -1,12 +1,12 @@
-import {Component} from 'react';
-import logoK from '../assets/images/logo_kasa_white.png';
+import { Component } from 'react'
+import logoK from '../assets/images/logo_kasa_white.png'
 
 class Footer extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div className="footer">
-                <div className ="logoFooter">
-                    <img src={logoK} alt="logo de kasa" height="39,44px"/>
+                <div className="logoFooter">
+                    <img src={logoK} alt="logo de kasa" height="39,44px" />
                     <p>© 2020 Kasa. All rights reserved</p>
                 </div>
             </div>
@@ -14,4 +14,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default Footer

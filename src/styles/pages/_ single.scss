@@ -2,57 +2,112 @@
     margin: 0 5%;
     color: $main-color;
     font-size: $medium-font-size;
+    margin-bottom: 70px;
 
     &__content {
-        margin-top: 20px;
-        font-size: $medium-font-size;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-    
-      }
-      &__title {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 500;
-  
-      }
-      &__location {
-        margin: 14px 0;
-        font-size: 14px;
-        font-weight: 500;
+      margin-top: 20px;
+      font-size: $medium-font-size;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
 
-      }
-      &__tags {
-        margin: 18px 0;
-        display: flex;
-        flex-wrap: wrap;
-     
-      }
-      &__rating-and-host {
-        font-size: $medium-font-size;
-        gap : 50px;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        display: flex;
+      @include respond-to('tablet') {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
       }
- 
-    
-#single {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
 
- .collapse{
-  justify-content:center;
-  width: 335px;
-}
-}
-}
+    }
+
+    &__title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+
+      @include respond-to('tablet') {
+        font-size: 36px;
+      }
+
+      @include respond-to('desktop') {
+        font-size: 51px;
+      }
+
+    }
+
+    &__location {
+      margin: 14px 0;
+      font-size: 14px;
+      font-weight: 500;
+
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include respond-to('tablet') {
+        margin: 18px 0;
+      }
+
+    }
+
+    &__rating-and-host {
+      font-size: $medium-font-size;
+      gap: 50px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 100%;
+
+      @include respond-to('tablet') {
+        gap: 20px;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: flex-end;
+        width: 30%;
+      }
+    }
+
+
+    #single {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 10px;
+
+      @include respond-to('tablet') {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        align-content: center;
+        gap: 30px;
+      }
+
+      .collapse {
+        justify-content: center;
+        min-width: 335px;
+        margin-bottom: 10px;
+
+        @include respond-to('tablet') {
+          width: 100%;
+          margin-left: 0%;
+          margin-right: 0%;
+          max-width: 582px;
+        }
+
+        @include respond-to('desktop') {
+          max-width: 582px;
+        }
+      }
+    }
+  }

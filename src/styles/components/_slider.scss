@@ -1,69 +1,75 @@
 .slider {
   position: relative;
 
-    &__active-picture {
-      height: 255px;
-      width: 100%;
-      transform: scale(1);
-      transition: 2s ease-out;
+  &__active-picture {
+    height: 255px;
+    width: 100%;
+    transform: scale(1);
+    transition: 2s ease-out;
 
-      @include respond-to('tablet') {
-        max-height: 415px;
-    }  
-      @include respond-to('desktop') {
-        height: 415px;
-    } 
-      
+    @include respond-to('tablet') {
+      max-height: 415px;
     }
-  
-    &__inactive-picture {
-      transform: rotateX(-90deg);
-      transform: rotateX(180deg) translateZ(7.5vw) opacity(0.2);
 
-      transform-style: preserve-3d;
-      transition: transform 500ms cubic-bezier(.7, 0, .23, 1);        
+    @include respond-to('desktop') {
+      height: 415px;
+    }
 
+  }
+
+  &__inactive-picture {
+    transform: rotateX(-90deg);
+    transform: rotateX(180deg) translateZ(7.5vw) opacity(0.2);
+
+    transform-style: preserve-3d;
+    transition: transform 500ms cubic-bezier(.7, 0, .23, 1);
+
+  }
+
+  &__picture {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__previous,
+  &__next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__next-icon {
+    margin-right: 5px;
+  }
+
+  &__previous-icon {
+    margin-left: 5px;
+  }
+
+  &__next-icon,
+  &__previous-icon {
+    height: 19.8px;
+
+    @include respond-to('tablet') {
+      height: 40px
     }
-  
-    &__picture {
-      width: inherit;
-      height: inherit;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-  
-    &__previous,
-    &__next {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      display: flex;
-      align-items: center;
-    }
-  
-    &__next {
-      right: 0;
-    }
-  
-    &__next-icon {
-      margin-right: 5px;
-    }
-    &__previous-icon {
-      margin-left: 5px;
-    }
-  
-    &__next-icon,
-    &__previous-icon {
-      height: 19.8px;
-      @include respond-to('tablet') {
-        height: 40px    }  
-      @include respond-to('desktop') {
-        height: 79.2px
-    } 
-    }
-    &__counter {
-      display: none;
-      
+
+    @include respond-to('desktop') {
+      height: 79.2px
     }
   }
-  
+
+  &__counter {
+    display: none;
+
+  }
+}

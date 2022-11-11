@@ -1,27 +1,26 @@
-.about{
+.about {
   padding: 0 5%;
   background-color: $main-background;
   color: $main-color;
 
-      
-  display:flex;
+
+  display: flex;
   flex-direction: column;
   align-content: center;
 
+  margin-bottom: 70px;
+
   .banner {
-  height:223px;
-  margin-bottom: 20px;
+    height: 223px;
+    margin-bottom: 20px;
 
-#about {
+    #about {
+      min-width: 335px;
 
-  justify-content: center;
-  min-width: 335px;
-  @include respond-to('tablet') {
-    max-width: 1200px;
-}  
-  @include respond-to('desktop') {
-    margin: 25%;
-}  
-}
-}
+      @include respond-to('tablet') {
+        max-width: 1200px;
+      }
+
+    }
+  }
 }

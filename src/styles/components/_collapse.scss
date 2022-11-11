@@ -2,6 +2,27 @@
   color: white;
   margin-bottom: 20px;
 
+  @include respond-to('tablet') {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: fit-content;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    justify-content: center;
+
+  }
+
+  @include respond-to('desktop') {
+    max-width: 1023px;
+    align-content: space-around;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+  }
+
   @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
       $delay: 120ms * $i;
@@ -28,41 +49,36 @@
     min-width: 335px;
 
     @include respond-to('tablet') {
-      max-width: 1440px;
-      height: 40px;
-      font-size: 16px;      
-  }  
-    @include respond-to('desktop') {
+      max-width: 1023px;
       font-size: 24px;
       height: 52px;
       padding-left: 24px;
-  }  
+    }
   }
 
   &__arrow {
     align-content: center;
-  
     pointer-events: none;
     transform: rotate(180deg);
     transition: transform 300ms;
 
     .img {
       width: 40%;
-      
+
       @include respond-to('tablet') {
         width: 80%;
-       } 
+      }
+
       @include respond-to('desktop') {
         width: 100%;
-     }  
+      }
     }
 
-    @include respond-to('desktop') {
-     height: 24px;
-     margin-top: 1rem;
-     margin-right: 1rem;
-  }  
-
+    @include respond-to('tablet') {
+      height: 24px;
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
   }
 
   &__content {
@@ -77,41 +93,57 @@
     padding-left: 13px;
 
     @include respond-to('tablet') {
-      max-width: 1440px;
-  }  
+      max-width: 1023px;
+    }
+
     @include respond-to('desktop') {
       padding-left: 24px;
-  }  
+    }
 
   }
+
   &__text {
     margin: 0;
     font-size: $small-font-size;
 
+    @include respond-to('tablet') {
+      font-size: 18px;
+    }
+
+    @include respond-to('desktop') {
+      font-size: $medium-font-size;
+    }
+
   }
+
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: $small-font-size
-
+    font-size: $small-font-size;
   }
+
   &__list-element {
     margin-bottom: 3px;
 
+    @include respond-to('tablet') {
+      font-size: 18px;
+    }
   }
 }
+
 .rotate {
   transform: rotate(360deg);
 }
+
 .show {
   max-height: 500px;
   padding: 13px 13px 12px 13px;
   transition: max-height 250ms ease-in-out, padding 300ms ease-in-out;
 
-  @include respond-to('desktop') {
+  @include respond-to('tablet') {
     padding: 24px 24px 12px 24px;
-}  
+  }
 }
 
 @keyframes show-up {
@@ -119,6 +151,7 @@
     transform: translateY(30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;

@@ -1,13 +1,13 @@
-.footer{
+.footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     height: 209px;
     background-color: black;
     color: white;
 
-    .logoFooter{
+    .logoFooter {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -15,30 +15,32 @@
         padding-top: 62px;
         height: 39.44px;
         color: white;
-    
+
         @include respond-to('tablet') {
             padding-top: 64px;
         }
-       @include respond-to('desktop') {
+
+        @include respond-to('desktop') {
             padding-top: 66px;
         }
-    
-      
-      p {
-        padding-top: 5%; 
-        margin: 0;
-        font-weight: 500;
-        font-size: $small-font-size;
-        padding-bottom: 62px;
-    
-        @include respond-to('tablet') {
-            font-size: 16px;
-            padding-bottom: 40px;
-        } 
-        @include respond-to('desktop') {
-            font-size: $medium-font-size;
-            padding-bottom: 29px;
-        } 
+
+
+        p {
+            padding-top: 5%;
+            margin: 0;
+            font-weight: 500;
+            font-size: $small-font-size;
+            padding-bottom: 62px;
+
+            @include respond-to('tablet') {
+                font-size: calc($small-font-size + 0.390625vw);
+                padding-bottom: 40px;
+            }
+
+            @include respond-to('desktop') {
+                font-size: $medium-font-size;
+                padding-bottom: 29px;
+            }
+        }
     }
-}
 }

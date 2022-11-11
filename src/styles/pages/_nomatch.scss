@@ -1,4 +1,4 @@
-.nomatch{
+.nomatch {
   padding: 0% 5%;
   background-color: $main-background;
   color: $main-color;
@@ -8,30 +8,32 @@
   align-items: center;
 
   padding-top: 198px;
+  padding-bottom: 70px;
 
-    @include respond-to('desktop') {
-        padding-top: 186px;
-    }
+  @include respond-to('desktop') {
+    padding-top: 186px;
+  }
 
 }
 
 h2 {
   text-align: center;
-  
+
   font-weight: 700;
   margin: 0%;
 
   font-style: bold;
   font-size: 96px;
-  text-transform:uppercase;
+  text-transform: uppercase;
 
-    @include respond-to('tablet') {
-      font-size : 150px;
-    }
-    @include respond-to('desktop') {
-      font-size : 288px;
-      text-transform:none;
-    }
+  @include respond-to('tablet') {
+    font-size: 150px;
+  }
+
+  @include respond-to('desktop') {
+    font-size: 288px;
+    text-transform: none;
+  }
 
 }
 
@@ -48,31 +50,33 @@ h3 {
 
 
   @include respond-to('tablet') {
-    font-size : 24px;
+    font-size: 24px;
   }
+
   @include respond-to('desktop') {
     font-size: 36px;
     max-width: 872px;
     max-height: 51px;
   }
 
-} 
-  a {
-    margin-top: 15%;
-    color:  $main-color;
+}
 
-    font-size: 14px;
-    text-align: center;
-    padding: 0 5%;
+a {
+  margin-top: 15%;
+  color: $main-color;
+
+  font-size: 14px;
+  text-align: center;
+  padding: 0 5%;
 
 
-    @include respond-to('tablet') {
-      font-size : 16px;
-      margin-bottom: 200px;
-    }
-    @include respond-to('desktop') {
-      font-size: 18px;
-      margin-bottom: 159px;
-    }
-  } 
+  @include respond-to('tablet') {
+    font-size: 16px;
+    margin-bottom: 200px;
+  }
 
+  @include respond-to('desktop') {
+    font-size: 18px;
+    margin-bottom: 159px;
+  }
+}

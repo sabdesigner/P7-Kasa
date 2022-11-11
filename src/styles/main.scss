@@ -1,45 +1,25 @@
-@import
-"./layout/loading";
+@import "./layout/loading";
 
-@import
-"./utils/map";
-@import
-"./utils/mixins";
-@import
-"./utils/variables";
+@import "./utils/map";
+@import "./utils/mixins";
+@import "./utils/variables";
 
-@import 
-"./base/setting";
-@import 
-"./base/font";
-@import 
-"./base/general";
+@import "./base/setting";
+@import "./base/font";
+@import "./base/general";
 
-@import
-"./pages/home";
-@import
-"./pages/nomatch";
-@import
-"./pages/about";
-@import
-"./pages/\ single";
+@import "./pages/home";
+@import "./pages/nomatch";
+@import "./pages/about";
+@import "./pages/\ single";
 
-@import
-"./layout/footer";
-@import
-"./layout/header";
+@import "./layout/footer";
+@import "./layout/header";
 
-@import
-"./components/banner";
-@import
-"./components/cards";
-@import
-"./components/collapse";
-@import
-"./components/tags";
-@import
-"./components/slider";
-@import
-"./components/profile";
-@import
-"./components/rating";
+@import "./components/banner";
+@import "./components/cards";
+@import "./components/collapse";
+@import "./components/tags";
+@import "./components/slider";
+@import "./components/profile";
+@import "./components/rating";

@@ -1,21 +1,35 @@
 .profile {
-    display: flex;
-    justify-content: flex-end ;
-  
-    &__name {
-      font-size: 12px;
-      font-weight: 500;
-      margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
 
+  &__name {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+
+    @include respond-to('tablet') {
+      font-size: 16px;
     }
-    &__name p {
-      margin: 0;
-      text-align: end;
+
+    @include respond-to('desktop') {
+      font-size: 18px;
     }
-    &__picture {
-      border-radius: 50%;
-      height: 32px;
-      width: 32px;
+
+  }
+
+  &__name p {
+    margin: 0;
+    text-align: end;
+  }
+
+  &__picture {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+
+    @include respond-to('tablet') {
+      height: 64px;
+      width: 64px;
     }
   }
-  
+}

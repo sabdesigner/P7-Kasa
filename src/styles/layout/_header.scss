@@ -6,44 +6,50 @@ header {
 
   padding: 5%;
 
-.logo{
-  width: 40%;
-  flex: 40%;
+  .logo {
+    width: 40%;
+    flex: 40%;
+
+    img {
+      height: 47px;
+
+      @include respond-to('tablet') {
+        max-height: 100%;
+      }
+    }
+  }
 }
 
-}
 // navigation du header
-.navigation{
+.navigation {
   flex: 60%;
   text-align: right;
   justify-content: center;
-  
-a{
-  column-gap: 5px;
-  text-decoration: none;
-  text-align: right;
-  vertical-align: middle;
 
-  color: $main-color;
-  white-space: nowrap;
+  a {
+    column-gap: 5px;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: middle;
 
-  font-weight: 500;
+    color: $main-color;
+    white-space: nowrap;
 
-  font-size: $small-font-size;
-  text-transform: uppercase;
+    font-weight: 500;
+
+    font-size: $small-font-size;
+    text-transform: uppercase;
 
 
     @include respond-to('tablet') {
-        padding-top: 18px;
-    }
-    @include respond-to('desktop') {
+      padding-top: 18px;
+
       font-size: $medium-font-size;
       text-transform: none;
     }
+  }
 
- 
-}
-a:hover{
+  a:hover {
     text-decoration: underline;
-}
+  }
 }
