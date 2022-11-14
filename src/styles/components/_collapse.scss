@@ -47,6 +47,9 @@
     position: relative;
     z-index: 1;
     min-width: 335px;
+    @include respond-to('mini') {
+    min-width: 250px;
+  }
 
     @include respond-to('tablet') {
       max-width: 1023px;

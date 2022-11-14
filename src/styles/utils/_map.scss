@@ -1,5 +1,4 @@
-$breakpoints: ('tablet': (min-width: 768px),
-
-    // de 1440px à +
+$breakpoints: ('mini' : (max-width:320px),
+    'tablet': (min-width: 768px),
     'desktop': (min-width: 1441px),
 );

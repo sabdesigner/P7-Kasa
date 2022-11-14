@@ -1,6 +1,5 @@
 import Banner from '../components/Banner'
 import bannerHome from '../assets/images/banner_home_kasa.jpg'
-
 import Cards from '../components/Cards'
 
 function Home() {

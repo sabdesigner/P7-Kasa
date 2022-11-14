@@ -53,12 +53,11 @@
       }
 
     }
-
     &__rating-and-host {
       font-size: $medium-font-size;
       gap: 50px;
       margin-top: 5px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
 
       display: flex;
       flex-wrap: nowrap;
@@ -76,7 +75,6 @@
       }
     }
 
-
     #single {
       display: flex;
       justify-content: space-between;
@@ -92,11 +90,17 @@
         align-content: center;
         gap: 30px;
       }
+ 
 
       .collapse {
         justify-content: center;
         min-width: 335px;
         margin-bottom: 10px;
+        @include respond-to('mini') {
+          min-width: 250px;
+        }
+
+     
 
         @include respond-to('tablet') {
           width: 100%;

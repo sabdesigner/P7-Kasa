@@ -45,7 +45,9 @@
     font-size: 24px;
     text-transform: none;
 
-
+    @include respond-to('mini') {
+      font-size:  22px;
+    }
     @include respond-to('tablet') {
 
       max-height: 68px;

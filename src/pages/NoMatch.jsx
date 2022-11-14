@@ -5,9 +5,9 @@ function NoMatch() {
         <div>
             <div className="nomatch">
                 <h2>404</h2>
-                <h3>Oups! La page que vous demandez n&apos;existe pas.</h3>
+                <h3>Oups! La page que vous demandez n'existe pas.</h3>
                 <Link to="/" className="error__link">
-                    Retourner sur la page d&apos;accueil
+                    Retourner sur la page d'accueil
                 </Link>
             </div>
         </div>

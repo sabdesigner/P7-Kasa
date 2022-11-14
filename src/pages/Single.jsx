@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
+
 import Rating from '../components/Rating'
 import Profile from '../components/Profile'
 import Slider from '../components/Slider'
@@ -8,11 +9,22 @@ import Tags from '../components/Tags'
 import Collapse from '../components/Collapse'
 
 import products from '../assets/datas/logements.json'
+import Home from './Home'
 
 const Single = () => {
+  
+   
     const { cardId } = useParams()
+
     const card = products.find((card) => card.id === cardId)
-    const { title, location, rating, host, equipments, description, pictures } = card
+    if (card === undefined) return (
+        <main>
+          <Home/>
+        </main>
+      );
+
+        const { title, location, rating, host, equipments, description, pictures } = card
+ 
     return (
         <div className="single">
             <Slider slides={pictures} />
