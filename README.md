@@ -4,15 +4,12 @@ Kasa est un site de la location d’appartements entre particuliers depuis près
 ![100% left](/src/assets/images/logo_kasa_pink.png)
 
 # Kasa
-Projet 7 - Développez une application Web avec React et React Router
+Développez une application Web avec React et React Router
 
 # Screenshots
 ![50% left](/src/assets/images/screenshot_kasa_01.jpg)
 ![50% left](/src/assets/images/screenshot_kasa_02.jpg)
 ![50% left](/src/assets/images/screenshot_kasa_03.jpg)
-
-## Auteur
-Sabrina Ambre Biller
 
 ## Environments
 * Github: [@sabdesigner](https://github.com/sabdesigner)
