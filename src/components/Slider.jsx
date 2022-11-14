@@ -1,7 +1,4 @@
-import React from 'react'
 import { useState } from 'react'
-
-//Style
 import arrowLeft from '../assets/images/arrowLeft.svg'
 import arrowRight from '../assets/images/arrowRight.svg'
 
