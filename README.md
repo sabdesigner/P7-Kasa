@@ -1,11 +1,15 @@
 # KASA
-
-Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones ». C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » . Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
+Kasa est un site de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France. Projet React et développement de l’ensemble de l’application, des composants React, des routes React Router, en suivant les maquettes Figma et les contraintes techniques. (https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf)
 
 ![100% left](/src/assets/images/logo_kasa_pink.png)
 
 # Kasa
 Projet 11 - Développez une application Web avec React et React Router
+
+# Screenshots
+![50% left](/src/assets/images/screenshot_kasa_01.jpg)
+![50% left](/src/assets/images/screenshot_kasa_02.jpg)
+![50% left](/src/assets/images/screenshot_kasa_03.jpg)
 
 ## Auteur
 Sabrina Ambre Biller
@@ -29,8 +33,8 @@ Cloner le repository de Kasa Front-End:
 [Git clone](https://github.com/sabdesigner/P7-Kasa.git)
 
 Les étapes pour installer votre programme dans un terminal 
-Executez la commande `yarn install` 
-Lancez `yarn start`
+- Executez la commande `yarn install` 
+- Lancez `yarn start`
 
 ## Démarrage
 Cela devrait à la fois exécuter le serveur local et lancer votre navigateur.
