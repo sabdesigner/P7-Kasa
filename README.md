@@ -2,7 +2,7 @@
 
 Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones ». C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » . Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
 
-![center](Logo /kasa/src/assets/images/logo_kasa_pink.png)
+![100% left](/kasa/src/assets/images/logo_kasa_pink.png)
 
 # Kasa
 Projet 11 - Développez une application Web avec React et React Router
@@ -12,10 +12,8 @@ Sabrina Ambre Biller
 
 ## Environments
 * Github: [@sabdesigner](https://github.com/sabdesigner)
-* Voir la démo
-[![Netlify Status](https://api.netlify.com/api/v1/badges/15594da0-7c35-4268-abf3-8b099ed37152/deploy-status)](https://app.netlify.com/sites/kasa-sab/deploys)
-* Rapport de Bug
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=sabdesigner_P7-Kasa)
+* Voir la démo [![Netlify Status](https://kasa-sab.netlify.app/)
+* Rapport de Bug [![SonarCloud](https://sonarcloud.io/project/overview?id=sabdesigner_P7-Kasa)
 
 ### Pré-requis
 - [![Made-with-Javascript](https://img.shields.io/badge/Made%20with-Javascript-green)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
